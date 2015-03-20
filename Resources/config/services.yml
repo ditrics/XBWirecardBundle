@@ -1,0 +1,4 @@
+services:
+#    x_bsystem_wirecard.example:
+#        class: XBsystem\WirecardBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,15 @@
+x_bsystem_wirecard_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: XBsystemWirecardBundle:Default:index }
+
+x_bsystem_wirecard_checkout:
+    path: /checkout/
+    defaults: { _controller: XBsystemWirecardBundle:Checkout:index }
+
+x_bsystem_wirecard_genform:
+    path: /wirecard/genform/
+    defaults: { _controller: XBsystemWirecardBundle:Checkout:genform }
+
+x_bsystem_wirecard_ajax_genform:
+    path: /wirecard/ajax/genformajax/
+    defaults: { _controller: XBsystemWirecardBundle:Checkout:genformajax }

@@ -1,0 +1,5 @@
+{% if var is defined %}
+	{{ dump(var) }}
+{% endif %}
+
+{% render controller("XBsystemWirecardBundle:Checkout:genform", {"value" : 99, "desc" : "Description", "stmt" : "Statement", "ref" : "Reference"}) %}

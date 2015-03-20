@@ -1,0 +1,6 @@
+<form action="{{ formUrl }}" method="post">
+{% for key, value in hidden %}
+	<input type="hidden" id="xb_wirecard_{{ key }}" name="{{ key }}" value="{{ value }}" />
+{% endfor %}
+	<input type="submit" value="Checkout" />
+</form>
