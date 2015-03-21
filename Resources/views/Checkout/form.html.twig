@@ -2,5 +2,9 @@
 {% for key, value in hidden %}
 	<input type="hidden" id="xb_wirecard_{{ key }}" name="{{ key }}" value="{{ value }}" />
 {% endfor %}
-	<input type="submit" value="Checkout" />
+	<input type="submit" value="Checkout"
+		   {% for attr,val in submitattr %}
+			   {{ attr }}="{{ val }}"
+			{% endfor %}
+	/>
 </form>

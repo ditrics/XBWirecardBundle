@@ -2,4 +2,9 @@
 	{{ dump(var) }}
 {% endif %}
 
-{% render controller("XBsystemWirecardBundle:Checkout:genform", {"value" : 99, "desc" : "Description", "stmt" : "Statement", "ref" : "Reference"}) %}
+{% if response is defined %}
+	{{ dump(response) }}
+{% endif %}
+
+
+{#{% render controller("XBsystemWirecardBundle:Checkout:genform", {"value" : 99, "desc" : "Description", "stmt" : "Statement", "ref" : "Reference"}) %}#}
